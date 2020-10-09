@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Modularidad:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Modularidad_jar</output-path>
+    <root id="archive" name="Modularidad.jar">
+      <element id="module-output" name="Modularidad" />
+    </root>
+  </artifact>
+</component>

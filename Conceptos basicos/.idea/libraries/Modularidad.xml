@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Modularidad">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Librerias/Modularidad.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

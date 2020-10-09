@@ -76,7 +76,8 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Librerias/Modularidad.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -181,29 +182,29 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1602221185331">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1602224313212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602221185331" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1602221754257">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602224313212" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1602224579026">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602221754257" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1602221754257">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602224579026" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1602224579026">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602221754257" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1602221754257">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602224579026" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1602224579026">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602221754257" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1602221754257">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602224579026" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1602224579026">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602221754257" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1602221198934">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602224579026" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1602224319036">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602221198934" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602224319036" />
   </component>
 </project>
