@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="lbdat" layoutX="14.0" layoutY="14.0" prefHeight="44.0" prefWidth="471.0" text="Ejemplo de menu en Scene Builder" textFill="#512626">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="175.0" layoutY="101.0" mnemonicParsing="false" onAction="#event" text="Calcular años" />
+      <TextField fx:id="txtdat" layoutX="14.0" layoutY="101.0" />
+   </children>
+</AnchorPane>
