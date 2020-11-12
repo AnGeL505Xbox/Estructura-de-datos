@@ -87,6 +87,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1602224135223">
