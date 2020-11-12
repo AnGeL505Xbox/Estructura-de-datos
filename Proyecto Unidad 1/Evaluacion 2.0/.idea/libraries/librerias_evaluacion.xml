@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="librerias_evaluacion">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../librerias_evaluacion/out/artifacts/librerias_evaluacion_jar/librerias_evaluacion.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
