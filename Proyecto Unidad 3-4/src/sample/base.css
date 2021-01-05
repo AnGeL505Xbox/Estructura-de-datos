@@ -1,0 +1,13 @@
+.background {
+    -fx-background-color: #E8F3FC;
+}
+.test {
+     -fx-background: -webkit-linear-gradient(#E8F3FC,#FCF1E8);
+     -fx-background: -o-linear-gradient(#E8F3FC,#FCF1E8);
+     -fx-background: -moz-linear-gradient(#E8F3FC,#FCF1E8);
+     -fx-background: linear-gradient(#E8F3FC,#FCF1E8);
+}
+.button {
+    -fx-border-color: Wheat;
+    -fx-border-radius: 5;
+}
