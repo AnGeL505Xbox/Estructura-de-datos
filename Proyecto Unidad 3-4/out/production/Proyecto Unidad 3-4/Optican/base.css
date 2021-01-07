@@ -1,0 +1,45 @@
+.backgroundUser {
+    -fx-background: linear-gradient(#e8f3fc,#fcf1e8);
+}
+.backgroundAdmin {
+    -fx-background: linear-gradient(#fce8f3,#f3fce8);
+}
+.backgroundPane {
+    -fx-background-color: #e7e8fb;
+}
+.backgroundPaneAdmin {
+    -fx-background-color: #fbe8fc;
+}
+
+.button {
+    -fx-border-color: #b9bac9;
+    -fx-background-color: #e8e9fc;
+    -fx-border-radius: 10px;
+}
+.button.log {
+    -fx-border-color: #b9bac9;
+    -fx-background-color: #fcf1e8;
+}
+.cb {
+    -fx-border-radius: 5px;
+    -fx-border-color: #b9bac9;
+    -fx-background-color: #e8e9fc;
+}
+.list { -fx-background-color: #fafafe; }
+
+#Info {
+    -fx-border-color: #b9bac9 #b9bac9 #e8e9fc #b9bac9;
+    -fx-background-color: #e7e8fb;
+}
+#IMC {
+    -fx-border-color: #b9bac9 #b9bac9 #e8e9fc #b9bac9;
+    -fx-background-color: #e7e8fb;
+}
+#Tab {
+    -fx-border-color: #b9bac9 #b9bac9 #e8e9fc #b9bac9;
+    -fx-background-color: #e7e8fb;
+}
+#TabAdmin {
+    -fx-border-color: #afa2b0 #afa2b0 #fbe8fc #afa2b0;
+    -fx-background-color: #fbe8fc;
+}

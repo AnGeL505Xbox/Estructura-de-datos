@@ -1,4 +1,4 @@
-package sample;
+package Optican;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +16,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         primaryStage.setTitle("Optican");
         primaryStage.setScene(new Scene(root, 600, 600));
-        primaryStage.getIcons().add(new Image("./sample/Img/OpticanLogo.jpg"));
+        primaryStage.getIcons().add(new Image("Optican/Img/OpticanLogo.jpg"));
         primaryStage.show();
     }
 

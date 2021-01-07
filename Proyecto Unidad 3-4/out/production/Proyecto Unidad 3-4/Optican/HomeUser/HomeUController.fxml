@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="backgroundUser" stylesheets="@../base.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Optican.HomeUser.HomeUController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="125.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/OpticanLogo.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label onMouseClicked="#returnLogin" text="Optican - Atencion medica libre!!!">
+               <HBox.margin>
+                  <Insets left="10.0" top="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="135.0" prefWidth="57.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab id="Info" text="Informacion">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="backgroundPane">
+                           <children>
+                              <TextField fx:id="txName" promptText="Nombre">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin></TextField>
+                              <TextField fx:id="txLName" promptText="Apellidos">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin></TextField>
+                              <TextField fx:id="txAge" promptText="Edad">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin></TextField>
+                              <TextField fx:id="txKG" promptText="Peso (Kg)">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin></TextField>
+                              <TextField fx:id="txCM" promptText="Altura (Cm)">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin></TextField>
+                              <TextField fx:id="txSS" promptText="Numero del Seguro Social">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin></TextField>
+                              <Button mnemonicParsing="false" onAction="#addData" stylesheets="@../base.css" text="Agregar">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin></Button>
+                              <ListView fx:id="listPatient" prefHeight="260.0" prefWidth="600.0" styleClass="list" />
+                           </children>
+                        </VBox>
+                     </content>
+                </Tab>
+                <Tab id="IMC" text="Calculadora de Indice de Masa Corporal">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="backgroundPane">
+                           <children>
+                              <ListView fx:id="listIMC" prefHeight="175.0" prefWidth="218.0" styleClass="list">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </ListView>
+                              <ComboBox fx:id="cbPerson" prefHeight="25.0" prefWidth="122.0" promptText="Paciente" styleClass="cb">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <Pane prefHeight="175.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                              <Button mnemonicParsing="false" onAction="#calculateIMC" prefHeight="30.0" prefWidth="120.0" text="Calcular">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
