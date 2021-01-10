@@ -60,7 +60,7 @@
                            <children>
                               <TextField fx:id="txName" promptText="Nombre">
                                  <VBox.margin>
-                                    <Insets top="10.0" />
+                                    <Insets top="5.0" />
                                  </VBox.margin></TextField>
                               <TextField fx:id="txLName" promptText="Apellidos">
                                  <VBox.margin>
@@ -80,13 +80,31 @@
                                  </VBox.margin></TextField>
                               <TextField fx:id="txSS" promptText="Numero del Seguro Social">
                                  <VBox.margin>
-                                    <Insets bottom="5.0" top="5.0" />
+                                    <Insets top="5.0" />
                                  </VBox.margin></TextField>
+                              <TextField fx:id="txPpm" layoutX="10.0" layoutY="170.0" promptText="Pulsaciones por minuto">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txSpO2" layoutX="10.0" layoutY="419.0" promptText="Saturacion de Oxigeno en la sangre (%)">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txMgDl" layoutX="10.0" layoutY="419.0" promptText="Glucosa en la sangre (En mg/dl)">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
                               <Button mnemonicParsing="false" onAction="#addData" stylesheets="@../base.css" text="Agregar">
                                  <VBox.margin>
-                                    <Insets bottom="10.0" />
+                                    <Insets bottom="5.0" top="5.0" />
                                  </VBox.margin></Button>
-                              <ListView fx:id="listPatient" prefHeight="260.0" prefWidth="600.0" styleClass="list" />
+                              <ListView fx:id="listPatient" prefHeight="260.0" prefWidth="600.0" styleClass="list">
+                                 <VBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </VBox.margin></ListView>
                            </children>
                         </VBox>
                      </content>
@@ -97,7 +115,7 @@
                            <children>
                               <ListView fx:id="listIMC" prefHeight="175.0" prefWidth="218.0" styleClass="list">
                                  <VBox.margin>
-                                    <Insets top="10.0" />
+                                    <Insets left="5.0" right="5.0" top="10.0" />
                                  </VBox.margin>
                               </ListView>
                               <ComboBox fx:id="cbPerson" prefHeight="25.0" prefWidth="122.0" promptText="Paciente" styleClass="cb">
@@ -115,6 +133,19 @@
                         </VBox>
                      </content>
                 </Tab>
+                  <Tab id="IMC" onSelectionChanged="#calculateOthers" text="Mas Informacion">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="backgroundPane">
+                           <children>
+                              <ListView fx:id="listOthers" prefHeight="175.0" prefWidth="218.0" styleClass="list" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                                 </VBox.margin>
+                              </ListView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
               </tabs>
             </TabPane>
          </children>

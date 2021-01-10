@@ -12,22 +12,19 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class HomeAController {
     @FXML ListView listPatient, listCita;
     @FXML TextField txName, txLName, txAge, txKG, txCM, txSS;
-    @FXML protected void initialize(){
-    }
 
     Queue<Patient> cPacientes = new LinkedList<>();
     int t=0;
 
     public void addCita(ActionEvent event){
 
-        Patient patient = new Patient(txName.getText(),txLName.getText(),Integer.parseInt(txAge.getText()),Integer.parseInt(txSS.getText()),Double.parseDouble(txKG.getText()),Double.parseDouble(txCM.getText()),t);
+        Patient patient = new Patient(txName.getText(),txLName.getText(),Integer.parseInt(txAge.getText()),Integer.parseInt(txSS.getText()),Double.parseDouble(txKG.getText()),Double.parseDouble(txCM.getText()),0,0,0);
         cPacientes.add(patient);
 
         listPatient.getItems().add("#"+t+" "+patient.getName()+" "+patient.getlName());
