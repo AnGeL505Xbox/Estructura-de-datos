@@ -133,7 +133,7 @@
                         </VBox>
                      </content>
                 </Tab>
-                  <Tab id="IMC" onSelectionChanged="#calculateOthers" text="Mas Informacion">
+                  <Tab id="IMC" fx:id="tabInfo" onSelectionChanged="#calculateOthers" text="Mas Informacion">
                      <content>
                         <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="backgroundPane">
                            <children>
