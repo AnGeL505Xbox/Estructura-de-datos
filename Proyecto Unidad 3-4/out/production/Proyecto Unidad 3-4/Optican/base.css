@@ -1,45 +1,25 @@
-.backgroundUser {
-    -fx-background: linear-gradient(#e8f3fc,#fcf1e8);
+.root{
+    opticanBlue: #027abb;
+    materialGrey: rgb(219,219,219);
 }
-.backgroundAdmin {
-    -fx-background: linear-gradient(#fce8f3,#f3fce8);
+.main { -fx-background-color: linear-gradient(derive(opticanBlue , 100%) , ghostwhite  ); }
+.top {
+    -fx-background-color: linear-gradient(derive(opticanBlue , 100%), materialGrey );
+    -fx-border-color: opticanBlue transparent materialGrey transparent;
 }
-.backgroundPane {
-    -fx-background-color: #e7e8fb;
-}
-.backgroundPaneAdmin {
-    -fx-background-color: #fbe8fc;
-}
+.bottom{ -fx-background-color: ghostwhite; }
 
-.button {
-    -fx-border-color: #b9bac9;
-    -fx-background-color: #e8e9fc;
+Button {
+    -fx-border-color: derive(opticanBlue, 115%);
+    -fx-background-color: derive(opticanBlue, 137%);
     -fx-border-radius: 10px;
 }
-.button.log {
-    -fx-border-color: #b9bac9;
-    -fx-background-color: #fcf1e8;
-}
-.cb {
+ListView { -fx-background-color: derive(ghostwhite, 50%); }
+TextField { -fx-background-color: derive(ghostwhite, 55%); }
+ComboBox {
     -fx-border-radius: 5px;
-    -fx-border-color: #b9bac9;
-    -fx-background-color: #e8e9fc;
+    -fx-border-color: derive(materialGrey, 20%);
+    -fx-background-color: derive(opticanBlue, 137%);
 }
-.list { -fx-background-color: #fafafe; }
 
-#Info {
-    -fx-border-color: #b9bac9 #b9bac9 #e8e9fc #b9bac9;
-    -fx-background-color: #e7e8fb;
-}
-#IMC {
-    -fx-border-color: #b9bac9 #b9bac9 #e8e9fc #b9bac9;
-    -fx-background-color: #e7e8fb;
-}
-#Tab {
-    -fx-border-color: #b9bac9 #b9bac9 #e8e9fc #b9bac9;
-    -fx-background-color: #e7e8fb;
-}
-#TabAdmin {
-    -fx-border-color: #afa2b0 #afa2b0 #fbe8fc #afa2b0;
-    -fx-background-color: #fbe8fc;
-}
+#tab { -fx-background-color: derive(materialGrey, 20%); }

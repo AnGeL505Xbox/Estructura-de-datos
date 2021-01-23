@@ -19,9 +19,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="backgroundUser" stylesheets="@../base.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Optican.HomeUser.HomeUController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" stylesheets="@../base.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Optican.HomeUser.HomeUController">
    <top>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="top" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="125.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -52,9 +52,9 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane prefHeight="200.0" prefWidth="200.0" styleClass="bottom" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab id="Info" text="Informacion">
+                <Tab id="tab" text="Informacion">
                      <content>
                         <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="backgroundPane">
                            <children>
@@ -109,7 +109,7 @@
                         </VBox>
                      </content>
                 </Tab>
-                <Tab id="IMC" text="Calculadora de Indice de Masa Corporal">
+                <Tab id="tab" onSelectionChanged="#ordCb" text="Calculadora de Indice de Masa Corporal">
                      <content>
                         <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="backgroundPane">
                            <children>
@@ -118,7 +118,7 @@
                                     <Insets left="5.0" right="5.0" top="10.0" />
                                  </VBox.margin>
                               </ListView>
-                              <ComboBox fx:id="cbPerson" prefHeight="25.0" prefWidth="122.0" promptText="Paciente" styleClass="cb">
+                              <ComboBox fx:id="cbPerson" prefHeight="25.0" prefWidth="122.0" promptText="Paciente">
                                  <VBox.margin>
                                     <Insets top="10.0" />
                                  </VBox.margin>
@@ -133,7 +133,7 @@
                         </VBox>
                      </content>
                 </Tab>
-                  <Tab id="IMC" fx:id="tabInfo" onSelectionChanged="#calculateOthers" text="Mas Informacion">
+                  <Tab id="tab" fx:id="tabInfo" onSelectionChanged="#calculateOthers" text="Mas Informacion">
                      <content>
                         <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="backgroundPane">
                            <children>
