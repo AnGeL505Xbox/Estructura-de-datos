@@ -35,7 +35,7 @@ public class HomeAController {
     int elementPos = -1;
     int counter=0;
 
-    /*Citas-start*/
+    //#region Citas
 
     public void addCita(ActionEvent event){
         if(txName.getText().equals("") || txLName.getText().equals("") || txAge.getText().equals("") || txKG.getText().equals("") || txCM.getText().equals("") || txSS.getText().equals("")){
@@ -63,10 +63,8 @@ public class HomeAController {
             alert(a,b);
         }
     }
-
-    /*Citas-end*/
-
-    /*Enfermedades-start*/
+    //#endregion
+    //#region Enfermedades
 
     public void addSick(ActionEvent event){
         if(txSickName.getText().equals("") || txSickTotal.getText().equals("")){
@@ -106,10 +104,8 @@ public class HomeAController {
             }
         }
     }
-
-    /*Enfermedades-end*/
-
-    /*Busqueda por Seguro Social-start*/
+    //#endregion
+    //#region Busqueda por seguro social
 
     public void search(ActionEvent event){
         if (txSearch.getText().equals("")){
@@ -138,8 +134,25 @@ public class HomeAController {
             alert(aa,bb);
         }
     }
+    //#endregion
+    //#region Otras funciones
 
-    /*Busqueda por Seguro Social-end*/
+    public void returnLogin(MouseEvent mouseEvent){
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/Optican/Login.fxml"));
+            Scene scene = new Scene(root);
+            Main.stage.setScene(scene);
+        } catch (IOException e) { e.printStackTrace(); }
+    }
+
+    public void alert(String titulo, String contenido){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(titulo);
+        alert.setContentText(contenido);
+        alert.show();
+    }
+    //#endregion
+    //#region Funciones sin usar
 
     public int searchBin(int dato, List<Sick> array){
         int minIndex = 0;
@@ -159,21 +172,5 @@ public class HomeAController {
         }
         return -1;
     }
-
-
-
-    public void returnLogin(MouseEvent mouseEvent){
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("/Optican/Login.fxml"));
-            Scene scene = new Scene(root);
-            Main.stage.setScene(scene);
-        } catch (IOException e) { e.printStackTrace(); }
-    }
-
-    public void alert(String titulo, String contenido){
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle(titulo);
-        alert.setContentText(contenido);
-        alert.show();
-    }
+    //#endregion
 }

@@ -1,5 +1,6 @@
 package Optican.HomeUser;
 
+import Optican.Controller;
 import Optican.Main;
 import Optican.User;
 
@@ -14,25 +15,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Stack;
 
-public class HomeUController {
-    @FXML ListView<String> listIMC;
-    @FXML ListView<String> listPatient;
-    @FXML ListView<String> listOthers;
+public class HomeUController{
+    @FXML ListView<String> listIMC, listPatient, listOthers;
     @FXML TextField txName, txLName, txAge, txKG, txCM, txSS, txSpO2, txPpm, txMgDl;
     @FXML ComboBox<String> cbPerson;
     @FXML Tab tabInfo;
-    @FXML protected void initialize(){}
 
-    int id = 0;
     LinkedList<User> lPatient = new LinkedList<>();
     Stack<Double> sPatient = new Stack<>();
+    int id = 0;
 
-    /*Datos-start*/
+    //#region Añadir datos
 
     public void addData(ActionEvent event){
         if(txName.getText().equals("") || txLName.getText().equals("") || txAge.getText().equals("") || txKG.getText().equals("") || txCM.getText().equals("") || txSS.getText().equals("") || txSpO2.getText().equals("") || txMgDl.getText().equals("") || txPpm.getText().equals("")){
@@ -43,16 +39,14 @@ public class HomeUController {
             User user = new User(txName.getText(),txLName.getText(),Integer.parseInt(txAge.getText()),Integer.parseInt(txSS.getText()),Double.parseDouble(txKG.getText()),Double.parseDouble(txCM.getText()),Double.parseDouble(txPpm.getText()),Double.parseDouble(txMgDl.getText()),Double.parseDouble(txSpO2.getText()));
             user.setId(id);
             id++;
-            this.lPatient.add(user);
 
+            this.lPatient.add(user);
 
             listPatient.getItems().add(user.getName() + " " + user.getlName() + " " + user.getSs());
         }
     }
-
-    /*Datos-end*/
-
-    /*Indice de Masa Corporal-start*/
+    //#endregion
+    //#region Indice de Masa Corporal
 
     public void calculateIMC(ActionEvent event){
         listIMC.getItems().clear();
@@ -128,10 +122,8 @@ public class HomeUController {
             }
         }
     }
-
-    /*Indice de Masa Corporal-start*/
-
-    /*Mas Informacion-start*/
+    //#endregion
+    //#region Mas informacion
 
     public void calculateOthers(){
         if (tabInfo.isSelected()) {
@@ -189,9 +181,8 @@ public class HomeUController {
     public void ppGood(){ listOthers.getItems().add("Su frecuencia cardiaca es: " + sPatient.peek() + "ppm - Bien"); }
     public void ppExcelent(){ listOthers.getItems().add("Su frecuencia cardiaca es: " + sPatient.peek() + "ppm - Excelente"); }
 
-    /*Mas Informacion-start*/
-
-    /*Otras funciones-start*/
+    //#endregion
+    //#region Otras funciones
 
     public void returnLogin(MouseEvent mouseEvent){
         try {
@@ -207,6 +198,5 @@ public class HomeUController {
         alert.setContentText(contenido);
         alert.show();
     }
-
-    /*Otras funciones-end*/
+     //#endregion
 }
